@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
- <script src="script.js" defer></script>
-</head>
-<body>
- <h1>number guessing</h1>
- <input type="text" placeholder="What is your Guess" id="inputfield">
-<button id="inputsubmit">Guess</button>
-<div id="result"></div>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Guess the Number</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="generate()">
+
+        <div class="main">
+            <h1>Guess the Number!</h1>
+            <h3 id="h3"></h3>
+            <input type="number" autocomplete="off" id="input" placeholder="Take A Guess?" step=1;>
+            <br><br>
+            <div id="buttons" step=1>
+                <button id="check" onclick="check();">Check!</button>
+                <button id="giveUp" onclick="reveal();">I Give Up!</button>    
+                <button id="another" onclick="generate();">Try Another Number!</button>
+            </div>
+
+        </div>
+
+    </body>
+
+
 </html>
